@@ -1,0 +1,41 @@
+.newsletter {
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--titulo {
+        margin-bottom: 1rem;
+    }
+
+    &--suscribe {
+        transform: rotate(90deg);
+        text-align: center;
+        vertical-align: center;
+        font-weight: $bold;
+    }
+
+    & input {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    &__suscribe {
+        width: 50px;
+        background-color: $white;
+        color: $Smoky-black;
+    }
+
+    &__mail {
+        background-color: $Smoky-black;
+        padding: 4rem 0;
+        flex-basis: calc(95% - 1rem);
+    }
+}
+
+@include respond-to('lg') {
+    .newsletter {
+        margin-top: 30%;
+
+    }
+}

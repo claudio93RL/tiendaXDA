@@ -1,0 +1,15 @@
+.input {
+    color: $Smoky-black;
+
+    &--small {
+        padding: 1rem;
+        width: 23rem;
+    }
+
+    @include respond-to('md') {
+        &--large {
+            padding: 1rem 2rem;
+            width: 35rem;
+        }
+    }
+}

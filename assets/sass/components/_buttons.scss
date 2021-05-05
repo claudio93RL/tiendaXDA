@@ -1,0 +1,21 @@
+
+.button {
+    border: 2px solid $Smoky-black;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: $Smoky-black;
+    &--small {
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+    }
+    &--normal {
+        padding: 2rem;
+    }
+    &:hover{
+        border: 1px solid $Granite-gray;
+    }
+    &:focus {
+        border: 1px solid $Granite-gray;
+        color: $Granite-gray;
+    }
+}

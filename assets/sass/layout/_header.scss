@@ -1,0 +1,31 @@
+
+.header {
+    background: url("../img/evan-wise-JcP7Tyoy4ME-unsplash.jpg") no-repeat center top;
+    height: 280px; /* You must set a specified height */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    grid-row: 1;
+}
+
+@include respond-to('md') {
+    .header {
+        height: 400px;
+        background-position: top;
+        background-size: cover;
+        background-attachment:inherit;
+        grid-row: 1;
+    }
+}
+
+@include respond-to('lg') {
+    .header {
+        height: 100%;
+        background-position: top;
+        background-size: cover;
+        background-attachment:inherit;
+        float: right;
+        grid-row:1 ;
+    }
+}
